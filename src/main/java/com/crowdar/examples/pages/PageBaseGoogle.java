@@ -9,6 +9,4 @@ public class PageBaseGoogle extends PageBaseWeb {
         super(driver);
         BASE_URL = "http://www.google.com.ar";
     }
-
-
 }
