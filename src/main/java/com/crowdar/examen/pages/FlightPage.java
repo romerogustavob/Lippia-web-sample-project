@@ -130,8 +130,6 @@ public class FlightPage extends PageBasePhptravels{
 	
 	public void fechaVueloIda() {
 		inputDateFlightStart().sendKeys(Keys.ENTER);
-		//input#FlightsDateStart.form-control.form-readonly-control
-		//#FlightsDateStart
 		String xpathSelectorDia="//*[@id=\"FlightsDateStart\"]";
 		
 		driver.findElementByXPath(xpathSelectorDia).click();

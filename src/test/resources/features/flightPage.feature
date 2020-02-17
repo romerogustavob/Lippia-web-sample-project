@@ -1,7 +1,7 @@
 Feature: Initial page As a web user I want to navigate PhpTravels web page and search a flight 
 and complete the form.
 	
-  @TestB
+  @Test
 	Scenario: As a web user I want to navigate PHPTravel and search a flight
 	  Given The user is in flight page
 	  When The user search a flight

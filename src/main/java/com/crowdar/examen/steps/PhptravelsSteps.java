@@ -52,6 +52,11 @@ public class PhptravelsSteps extends PageSteps {
     
     @When("The user complete a flight form")
     public void completeFields() throws Exception {
+    	Injector._page(LoginPage.class).go();
+    	Injector._page(LoginPage.class).inputEmail("romero_gustavob@yahoo.com.ar");
+    	Injector._page(LoginPage.class).inputPassword("zeroone");
+    	Injector._page(LoginPage.class).loginSubmit();
+    	Injector._page(AccountPage.class).linkToFlight();
     	Injector._page(FlightPage.class).clickRadioOneWay();
     	Injector._page(FlightPage.class).selectTipoBusqueda("First");
     	Injector._page(FlightPage.class).selectFlightFrom("Miami", "(MIA)");
@@ -60,19 +65,19 @@ public class PhptravelsSteps extends PageSteps {
     	Injector._page(FlightPage.class).clickSearchButton();
     	Injector._page(FlightResultPage.class).flightListVerifyExist();
     	Injector._page(BookingPage.class).acceptCookies();
-    	Injector._page(BookingPage.class).inputMailUser("romero_gustavob@yahoo.com.ar");
-    	Injector._page(BookingPage.class).inputPassUser("zeroone");
+//    	Injector._page(BookingPage.class).inputMailUser("romero_gustavob@yahoo.com.ar");
+//    	Injector._page(BookingPage.class).inputPassUser("zeroone");
     	Injector._page(BookingPage.class).selectTitle("Mrs.");
     	Injector._page(BookingPage.class).inputName("Gustavo");
     	Injector._page(BookingPage.class).inputSurname("Romero");
     	Injector._page(BookingPage.class).inputMail("romero_gustavob@yahoo.com.ar");
     	Injector._page(BookingPage.class).inputPhone("3624282828");
-    	Injector._page(BookingPage.class).inputBirthday("2001-01-15");
-    	Injector._page(BookingPage.class).inputPassportNo("3454509090344990");
+    	Injector._page(BookingPage.class).inputBirthday("1890-01-01");
+    	Injector._page(BookingPage.class).inputPassportNo("AAB899234");
     	Injector._page(BookingPage.class).inputExpirationDate("2020-12-30");
     	Injector._page(BookingPage.class).selectNationality("ARGENTINA");
-    	Injector._page(BookingPage.class).selectCardType("American Express");
-    	Injector._page(BookingPage.class).inputCardNumber("2322988409983456");
+    	Injector._page(BookingPage.class).selectCardType("Visa");
+    	Injector._page(BookingPage.class).inputCardNumber("4509953566233704");
     	Injector._page(BookingPage.class).selectExpiredMonthCard("Aug (08)");
     	Injector._page(BookingPage.class).selectExpiredYearCard("2021");
     	Injector._page(BookingPage.class).inputCvvCard("134");

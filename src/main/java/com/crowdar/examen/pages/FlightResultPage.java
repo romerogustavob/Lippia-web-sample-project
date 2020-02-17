@@ -39,7 +39,6 @@ public class FlightResultPage extends PageBasePhptravels {
 	
 	public void flightListVerifyExist() {
 		if(labelListFlights()==null) {
-			System.out.println("Chequear Vuelos");
 			//I´ve supposed. The user will take the first Flight
 			buttonBookNowFirstElement().click();
 		}
