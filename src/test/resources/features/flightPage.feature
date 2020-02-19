@@ -7,7 +7,7 @@ and complete the form.
 	  When The user search a flight
 	  Then The page search a list of flights
 	  
-#este test case no me queda claro	  
+#este test case no me queda claro, precondición: el usuario debe estar registrado 
 	@TestB
 	Scenario: As a web user I want to navigate PHPTravel and search a flight
 	  Given The user is in flight page
