@@ -61,7 +61,7 @@ public class PhptravelsSteps extends PageSteps {
     	Injector._page(FlightPage.class).selectTipoBusqueda("First");
     	Injector._page(FlightPage.class).selectFlightFrom("Miami", "(MIA)");
     	Injector._page(FlightPage.class).selectFlightTo("Adler Sochi", "(AER)");
-    	Injector._page(FlightPage.class).setDateFlightStart("2020-02-18");
+    	Injector._page(FlightPage.class).setDateFlightStart("2020-02-20");
     	Injector._page(FlightPage.class).clickSearchButton();
     	Injector._page(FlightResultPage.class).flightListVerifyExist();
     	Injector._page(BookingPage.class).acceptCookies();
@@ -77,10 +77,10 @@ public class PhptravelsSteps extends PageSteps {
     	Injector._page(BookingPage.class).inputExpirationDate("2020-12-30");
     	Injector._page(BookingPage.class).selectNationality("ARGENTINA");
     	Injector._page(BookingPage.class).selectCardType("Visa");
-    	Injector._page(BookingPage.class).inputCardNumber("4509953566233704");
-    	Injector._page(BookingPage.class).selectExpiredMonthCard("Aug (08)");
-    	Injector._page(BookingPage.class).selectExpiredYearCard("2021");
-    	Injector._page(BookingPage.class).inputCvvCard("134");
+    	Injector._page(BookingPage.class).inputCardNumber("4263982640269299");
+    	Injector._page(BookingPage.class).selectExpiredMonthCard("Feb (02)");
+    	Injector._page(BookingPage.class).selectExpiredYearCard("2023");
+    	Injector._page(BookingPage.class).inputCvvCard("837");
     	Injector._page(BookingPage.class).checkAcceptConditions();
     }
     
